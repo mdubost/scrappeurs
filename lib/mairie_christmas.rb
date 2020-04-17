@@ -16,5 +16,9 @@ end
 
 def main
   ???
+  # check here : def mairie_christmas
+  url = "http://annuaire-des-mairies.com/val-d-oise.html"
+  get_townhall_urls(url).map!{|n, u| {n => get_townhall_email(u)}}
+end
 end
  
